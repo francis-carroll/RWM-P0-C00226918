@@ -17,5 +17,15 @@ namespace Tests
 
             CollectionAssert.AreEqual(expected, output);
         }
+
+        [Test]
+        public void Modulo3FilterTestIntermediate()
+        {
+            int[] input = { 0, 1220, -20 };
+            int[] expected = Modulo3Filter.modulo3s(input);
+            int[] output = { 0, 2, -2};
+
+            CollectionAssert.AreEqual(expected, output);
+        }
     }
 }

@@ -1,8 +1,10 @@
-﻿public class Modulo3Filter
+﻿using System;
+
+public class Modulo3Filter
 {
-    public static int modulo3(int input, int devisor)
+    public static int modulo3(int t_input, int t_devisor)
 	{
-		return input - ((input / devisor) * devisor);
+		return t_input - (t_devisor * (t_input / t_devisor));
 	}
 
 	public static int[] modulo3s(int[] input)
